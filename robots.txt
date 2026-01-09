@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://6clubgames.com/sitemap.xml
+
+# Prevent indexing of dynamic URLs
+Disallow: /*?*
+
+# Block common system folders (if exist)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
