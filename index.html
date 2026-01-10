@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>6 Club Login Guide – How to Register & Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn how to register, log in, deposit, withdraw, and play games on the 6 Club Game. Includes features, FAQs, and safety information.">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://6clubgames.com/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"6clubgames.com",
+  "url":"https://6clubgames.com/",
+  "logo":"https://6clubgames.com/6club-logo.jpg",
+  "contactPoint":[
+    {
+      "@type":"ContactPoint",
+      "contactType":"Customer Support",
+      "email":"support@6clubgames.com",
+      "availableLanguage":"English"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --orange:#ff0000;
+  --dark:#000000;
+  --border:#000000;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;
+  background:#fafafa;color:#333;line-height:1.8;
+}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  position:sticky;top:0;z-index:999;
+  background:#fff;border-bottom:1px solid var(--border);
+}
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 16px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:24px;
+  font-weight:800;
+  color:var(--orange);
+}
+.logo img{
+  width:34px;height:34px;object-fit:contain;
+}
+.menu-btn{font-size:24px;cursor:pointer}
+
+.top-btn{
+  background: var(--red);
+  color: #ffffff;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:600;
+  white-space:nowrap;
+  transition: all 0.25s ease;
+}
+
+/* Hover highlight */
+.top-btn:hover{
+  background: #cc0000; /* darker red */
+  box-shadow: 0 4px 10px rgba(255,0,0,0.35);
+  transform: translateY(-1px);
+}
+
+/* MENU */
+.menu{
+  display:none;background:#fff;border-top:1px solid var(--border);
+}
+.menu a{
+  display:block;padding:14px 16px;font-weight:600;
+  border-bottom:1px solid var(--border);
+}
+.menu a:hover{background:var(--black);color:#ff7878}
+
+/* SECTIONS */
+section{padding:12px 14px}
+h1{font-size:30px;margin-bottom:10px}
+h2{font-size:22px;color:var(--black);margin:28px 0 10px}
+h3{font-size:17px;margin-bottom:6px}
+p{font-size:15px;margin-bottom:12px}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#000000,#000000);
+  color:#fff;border-radius:0 0 26px 26px;
+  padding:36px 16px;
+}
+.hero p{color:#fff}
+
+/* CTA */
+.cta{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.cta a{
+  display:inline-block;margin:10px 10px 0 0;
+  padding:10px 20px;border-radius:24px;
+  font-weight:700;
+}
+.btn-light{background:#fff;color:var(--orange)}
+.btn-dark{background:#ffffff;color:#ff0000}
+
+/* CARD */
+.card{
+  background:#fff;border:1px solid var(--border);
+  border-radius:16px;padding:18px;margin-bottom:16px;
+}
+
+/* GAMES */
+.games{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.game{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px;
+  text-align:center;
+  transition:.3s ease;
+}
+.game img{
+  display:block;
+  margin:0 auto 12px auto;
+  width:56px;
+  height:56px;
+}
+.game:hover{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+.game:hover h3,
+.game:hover p{
+  color:#fff;
+}
+
+/* FAQ */
+.faq-item{border-bottom:1px;padding:10px 0}
+.faq-q{
+  display:flex;justify-content:space-between;
+  font-weight:600;cursor:pointer;
+}
+.faq-a{display:none;margin-top:4px;font-size:14px}
+.arrow{transition:.3s}
+
+/* FOOTER */
+footer{
+  background:#111;color:#aaa;
+  padding:28px 16px;margin-top:30px;
+}
+footer p{font-size:13px}
+.copy{text-align:center;font-size:12px;color:#777;margin-top:10px}
+
+/* MOBILE */
+@media(max-width:420px){
+  .games{grid-template-columns:1fr}
+  h1{font-size:26px}
+  .logo{font-size:22px}
+}
+
+.site-link {
+  color: blue;               /* Blue for site link */
+  text-decoration: underline;
+}
+
+.site-link:hover {
+  color: darkblue;
+}
+
+/* REGISTER SECTION FIX */
+.register-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px;
+}
+.register-text {
+  flex: 1 1 45%;
+  padding-right: 20px;
+}
+.register-text ul {
+  padding-left: 20px;
+}
+.register-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+.register-image img {
+  width: 445px;
+  height: 808px;
+  object-fit: cover;
+  border-radius: 8px;
+  max-width: 100%;
+}
+@media(max-width:900px){
+  .register-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .register-text, .register-image {
+    flex: 1 1 100%;
+    padding: 0;
+  }
+  .register-image img {
+    width: 70%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="logo">
+      <img src="6club-logo.jpg" alt="6 Club Game Logo">
+      6 Club Game
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()" aria-controls="menu" aria-expanded="false" role="button" tabindex="0">
+      ☰
+    </div>
+  </div>
+  <div class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="responsiblegaming.html">Responsible Gaming</a>
+    <a href="about.html">About Us</a>
+    <a href="#faq">FAQ</a>
+    <a href="#terms">Terms and Conditions</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="#disclaimer">Disclaimer</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+<h1>6 Club Login and Registration Guide</h1>
+<p>6 Club Game is an online gaming platform in India that offers a range of prediction-based, lottery-style, and casual mobile games through a single application. The platform allows users to register using a mobile number, access different game formats, earn rewards, and withdraw funds using supported payment methods.</p>
+<div class="cta">
+  <a href="https://www.6clubz.com/#/register?invitationCode=66747234905" class="btn-light" rel="nofollow sponsored">Register Now</a>
+  <a href="https://www.6clubz.com/#/login" class="btn-dark" rel="nofollow sponsored">Login</a>
+</div>
+</section>
+
+<section>
+<h2>Overview of 6 Club Game Platform</h2>
+<div class="card">
+<p><a href="/index.html" class="site-link">6 Club</a> platform brings multiple game categories together in one place, reducing the need to switch between different apps. The platform focuses on ease of use, clear navigation, and stable performance across devices.</p>
+<p>The app is designed mainly for mobile users who prefer short gameplay sessions and simple rules. Most games operate on fixed time intervals, making the platform suitable for users who want quick results without long or complex gameplay.</p>
+<p>After logging in, users can access games, bonuses, deposits, withdrawals, and account information directly from the main dashboard. This layout helps both new and experienced users understand how the platform works without spending time learning complicated menus.</p>
+<p>Customer support is available throughout the day to assist users with account, gameplay, or payment-related questions.</p>
+</div>
+</section>
+
+<section id="games">
+<h2>Games Available on 6 Club App</h2>
+<div class="games">
+  <div class="game"><img src="color-game-6club.jpg" alt="6 Club Color Prediction Game interface for online mobile gaming" loading="lazy"><h3>Colour Prediction Game</h3><p>The Colour Prediction Game runs on short, timed rounds. Users select a colour option before the countdown ends, and results are generated automatically once the round is complete. Because each round takes only a short time, this game is commonly preferred by users who enjoy quick decision-based gameplay.</p></div>
+  <div class="game"><img src="wingo-game-6club.jpg" alt="wingo game interface in 6 Club app" loading="lazy"><h3>Wingo Game</h3><p>Wingo is a time-based game that combines chance with structured betting options. Each round follows a fixed duration, allowing users to place predictions and view outcomes within a limited time frame.</p></div>
+  <div class="game"><img src="k3-lottery-6club.jpg" alt="k3 game interface in 6 Club app" loading="lazy"><h3>K3 Lottery</h3><p>K3 Lottery follows a traditional number-selection format. Users choose numbers according to the game rules and wait for the draw result. This format is familiar to users who enjoy lottery-style games.</p></div>
+  <div class="game"><img src="5D-lottery-6club.jpg" alt="5D game interface in 6 Club app" loading="lazy"><h3>5D Lottery</h3><p>The 5D Lottery expands on standard lottery formats by allowing users to select five numbers. This increases the number of possible combinations and adds more depth for users who prefer number-based gameplay.</p></div>
+  <div class="game"><img src="aviator-game-6club.jpg" alt="Aviator game interface in 6 Club app" loading="lazy"><h3>Aviator Game</h3><p>Aviator is a popular online casino game that perfectly combines the simplicity of controls, dynamic gameplay, and sky-high rewards. In fact, it is a multiplayer game where you bet on the growing curve that is represented by a red aircraft. When the round starts, it takes off and starts to fly on the playing field. </p></div>
+  <div class="game"><img src="chickenwinner-game-6club.jpg" alt="Aviator game interface in 6 Club app" loading="lazy"><h3>Chicken Road Game</h3><p>Chicken Road Game is a casual mobile game focused on timing and navigation. Players guide characters through obstacles to earn in-game rewards, offering a lighter alternative to prediction and lottery games.</p></div>
+</div>
+
+<h2>Key Features</h2>
+<div class="card">
+<p>The platform supports multiple payment methods, including UPI, digital wallets, bank cards, and supported cryptocurrency options such as (TRC20). Deposits are generally processed instantly, while withdrawals are completed within a reasonable time depending on the selected payment method.</p>
+<p>Security measures such as encrypted connections, account verification, and secure payment gateways are used to protect user data and transactions. These systems help reduce the risk of unauthorized access.</p>
+<p>6 Club app also provides different bonus options, including registration rewards, referral benefits, and daily login incentives. Rewards availability and conditions may change based on platform rules.</p>
+</div>
+</section>
+
+<!-- REGISTER SECTION FIXED -->
+<h2>6 Club Game Register</h2>
+<div class="register-section">
+  <div class="register-text">
+    <ul>
+      <li>Download the 6 Club Game app from the official site.</li>
+      <li>Open the app and click on "Register" or "Sign Up".</li>
+      <li>Enter your details such as name, email, phone number, and password.</li>
+      <li>Verify your email or phone number using the OTP sent.</li>
+      <li>Complete your profile to start playing and earning rewards.</li>
+    </ul>
+  </div>
+  <div class="register-image">
+    <img src="6club-register.png" alt="6 Club Game Banner">
+  </div>
+</div>
+
+<h2>How to Deposit 6 Club Game</h2>
+<div class="card">
+<p>Recharging your account on the 6 Club website is easy and lets you deposit funds for various games. Simply follow the steps provided on the platform to add funds and start playing. This quick process ensures you’re ready to enjoy the full range of games available on 6 Club.</p>
+<p><strong>Login:</strong> First, open your 6 Club platform account, then click on the “Wallet” option located at the bottom of the screen.</p>
+<p><strong>Deposit:</strong> Next, click on the “Deposit” option at the top of the screen.</p>
+<p><strong>Select Channel Method:</strong> You can select 2nd or 3rd Channel Type.</p>
+<p><strong>Select Deposit Amount:</strong> Next, choose your desired deposit amount and then click on the “Deposit” button to proceed.</p>
+<p>After this, you’ll be directed to a new page where you can make a payment using any UPI app or Bank app, such as Paytm, PhonePe, or GPay, by scanning the provided QR code. Once the transaction is complete, the amount will be instantly added to your game account.</p>
+<p>Check out our <a href="#6club-deposit-guide">6 Club Deposit Guide</a> for detailed steps.</p>
+</div>
+
+<h2>How to Withdrawal Money in 6 Club Game</h2>
+<div class="card">
+<p>You can withdraw the amount won and earned from this game to your bank and USDT wallet very easily and safely, For this you have to follow the following steps.</p>
+<p><strong>First Login 6 Club Game:</strong> First of all you have to login to your 6 Club platform.</p>
+<p><strong>Wallet:</strong> After this you have to click on the Wallet button below.</p>
+<p><strong>Withdrawal Option:</strong> After this you have to click on the Withdrawal button above.</p>
+<p><strong>Select Withdrawal Method:</strong> Next select the wallet to which you want to withdraw.</p>
+<p><strong>Enter Amount:</strong> After this enter the amount you want to withdraw and click on Submit button.</p>
+<p>After this you will get the amount in your wallet within a few minutes.</p>
+</div>
+
+<section id="bonus">
+<h2>Bonuses and Reward Programs</h2>
+<div class="card">
+<h3>YouTube Creative Video Events</h3>
+<p>This platform offers advanced support and generous rewards to all video creators, content creators, and influencers, helping them enhance their work and earn rewards for their contributions.</p>
+<h3>6 Club app First Recharge Reward Event</h3>
+<p>When a player makes their first deposit on this platform, they receive a Reward ranging from 10% to 200%, depending on the special promotional offer available at that time.</p>
+<h3>Rebate Cashback Reward Event</h3>
+<p>Many players enjoy a variety of exciting games, which is why Real Time Rebate is offered. This feature increases a percentage of the bet amount, providing additional rewards and enhancing the overall betting experience.</p>
+<h3>Win Streak Reward Event</h3>
+<p>In the Wingo 1-minute game, claim your Win Streak Reward at the 6 Club app self-service center, divided into two types based on your single bet amount.</p>
+<h3>Super Jackpot Reward Event</h3>
+<p>Through 6 Club app Trick you can win prizes by playing various Slots Games and have a chance to win substantial Jackpot prizes.</p>
+<h3>Head Agent Invite Agent Reward</h3>
+<p>We can also call this event Gold Win Event, because in this event we are given extra money and prizes for free on monthly, weekly and daily basis.</p>
+<h3>Daily 6 Club platform Gift Code Free</h3>
+<p>After registering and logging into this platform, you can then join the 6 Club platform official channel given above and earn money by claiming a free gift code every day.</p>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<div class="card">
+<p>We are an independent online gaming review website focused on analyzing mobile gaming platforms available in India. Our goal is to provide users with clear, unbiased, and experience-based information about gaming apps, including gameplay types, Rewards, deposits, withdrawals, and potential risks.</p>
+<p>All information published on this website is based on platform research, publicly available data, and user feedback. We do not encourage irresponsible gaming and strongly advise users to play within their financial limits.</p>
+</div>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">What is 6 Club?<span class="arrow">▼</span></div>
+  <div class="faq-a">6 Club is an Indian online gaming platform that offers colour prediction games, lottery-style games, and casual mobile games through a dedicated app.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">How do I register on 6 Club Game?<span class="arrow">▼</span></div>
+  <div class="faq-a">Users can register by entering a mobile number, creating a password, and completing account verification. The process is usually completed within a few minutes.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">Is the login process secure?<span class="arrow">▼</span></div>
+  <div class="faq-a">Yes. The platform uses encrypted connections and secure servers to protect user accounts and personal information.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">What types of games are available?<span class="arrow">▼</span></div>
+  <div class="faq-a">The platform includes colour prediction games, lottery formats such as K3 and 5D, blockchain-based games, and casual mobile games.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">What is the minimum withdrawal amount?<span class="arrow">▼</span></div>
+  <div class="faq-a">The minimum withdrawal amount may vary depending on the payment method. In most cases, it starts from ₹100.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">How long do withdrawals take?<span class="arrow">▼</span></div>
+  <div class="faq-a">UPI and wallet withdrawals are often processed within a few hours. Bank transfers may take up to 24 hours depending on banking systems.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">How do I use the referral code?<span class="arrow">▼</span></div>
+  <div class="faq-a">During registration, users can enter the invite code <strong>635656315449</strong> in the referral field to access referral-related benefits.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">6 Club Real or Fake?<span class="arrow">▼</span></div>
+  <div class="faq-a">Some users report successful withdrawals based on the gameplay and platform rules. Results may vary, and users should play responsibly.</div>
+</div>
+<div class="faq-item">
+  <div class="faq-q" onclick="faq(this)">6 Club Game Gift Code Telegram Channel?<span class="arrow">▼</span></div>
+  <div class="faq-a">Some 6 Club Game free gift codes are given on this website and new 6 Club Gift Codes are given here every day more than 3 times.</div>
+</div>
+</section>
+
+<section id="terms">
+<h2>Terms and Conditions</h2>
+<div class="card">
+<p>Referral rewards depend on active members who meet deposit and activity requirements. All users must complete account verification, including linking bank details.</p>
+<p>Multiple accounts, duplicate data, or similarities in sensitive information such as IP address or bank details may result in account review. The platform reserves the right to suspend or ban accounts involved in misuse, manipulation, or illegal activities.</p>
+</div>
+</section>
+
+<section id="contacts">
+<h2>Contact Us</h2>
+<div class="card">
+<p><strong>Email:</strong> 6clubgames@gmail.com</p>
+<p><strong>Support Hours:</strong> 24/7 Hours</p>
+<p><strong>Response Time:</strong> Within 24 hours</p>
+</div>
+</section>
+
+<section id="privacy">
+<h2>Privacy Policy</h2>
+<div class="card">
+<!-- Privacy content same as your input -->
+<p>At <strong>6clubgames.com</strong>, your privacy is important to us. We believe users should clearly understand how their information is handled when visiting our website. This Privacy Policy explains what data we collect, how we use it, and how we protect it.</p>
+<p>By using this website, you agree to the practices described below.</p>
+<h3>Information We Collect</h3>
+<p>You can browse our website freely without providing any personal information. We do not ask users to register, sign up, or submit personal details to access our content.</p>
+<ul>
+<li><strong>Contact Information:</strong> If you choose to contact us via email, we may receive your name, email address, and the message you send. This information is used only to reply to your inquiry.</li>
+<li><strong>Basic Usage Data:</strong> Like most websites, we may collect non-personal data such as browser type, device type, IP address, pages visited, and time spent on the site. This helps us understand how visitors use our website and improve its performance.</li>
+</ul>
+<h3>How We Use Your Information</h3>
+<p>Any information collected is used only for legitimate purposes, including improving website content, responding to emails, analyzing traffic, and protecting the site from misuse or security threats.</p>
+<h3>Cookies</h3>
+<p>Our website may use cookies to improve functionality and understand visitor behavior. You can disable cookies, but some features may not work properly.</p>
+<h3>Third-Party Websites</h3>
+<p>We do not control external websites and are not responsible for their content or privacy policies. Users should read the policies of third-party sites they visit.</p>
+<h3>Affiliate and Promotional Links</h3>
+<p>We do not collect login details, banking information, or payment data. All transactions are handled by third-party platforms.</p>
+<h3>Data Protection</h3>
+<p>We take reasonable steps to protect your information but cannot guarantee absolute security online.</p>
+<h3>Children’s Privacy</h3>
+<p>This website is intended for users aged <strong>18+</strong>. We do not knowingly collect personal information from children.</p>
+<h3>Legal Notice</h3>
+<p>Online gaming laws differ by region. This website is informational only and does not guarantee earnings.</p>
+<h3>Changes to This Policy</h3>
+<p>Updates may be posted on this page.</p>
+<h3>Contact Us</h3>
+<p><strong>Email:</strong> 6clubgames@gmail.com</p>
+<p><strong>Last Updated:</strong> January 2026</p>
+</div>
+</section>
+
+<section id="disclaimer">
+<h2>Disclaimer</h2>
+<div class="card">
+<p>This platform involves elements of both skill and chance. Participation is strictly limited to users 18 years and older. Gaming should be treated as entertainment, and users are advised to play responsibly.</p>
+<p><strong>Disclaimer:</strong> This website is not the official 6 Club platform. We do not own, operate, or manage the app. Content is informational and educational. Online gaming involves financial risk and may not be legal in all regions.</p>
+<p><strong>Note:</strong> Reward offers, referral rewards, and promotions are subject to change and provided by the platform. This website does not guarantee earnings.</p>
+</div>
+</section>
+
+<section id="author">
+<h2>About the Author</h2>
+<div class="card">
+<p>This content is created by an independent online gaming researcher who has spent several years closely studying mobile gaming platforms used by players across India.</p>
+<p>The author regularly tests gaming apps, reviews payment systems, studies user complaints, and follows platform updates to understand how these services actually work in real-world conditions.</p>
+<p>Special attention is given to factors such as deposit and withdrawal reliability, bonus terms, platform transparency, and responsible gaming practices. The goal is to help users make informed decisions rather than promote unrealistic expectations.</p>
+<p>All information published on this website is reviewed carefully, updated when changes occur, and written with user safety and clarity in mind.</p>
+</div>
+</section>
+
+<footer>
+© 2026 6 Club | 
+<a href="#terms">Terms & Conditions</a> |
+<a href="privacy.html">Privacy</a> | 
+<a href="about.html">About Us</a>
+</footer>
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  const btn = document.querySelector('.menu-btn');
+  const isOpen = menu.style.display === 'block';
+  menu.style.display = isOpen ? 'none' : 'block';
+  btn.setAttribute('aria-expanded', !isOpen);
+}
+
+document.querySelector('.menu-btn').addEventListener('keydown', function(e){
+  if(e.key === 'Enter' || e.key === ' '){
+    e.preventDefault();
+    toggleMenu();
+  }
+});
+
+function faq(el){
+  const answer = el.nextElementSibling;
+  const arrow = el.querySelector('.arrow');
+  const open = answer.style.display === 'block';
+  document.querySelectorAll('.faq-a').forEach(a => a.style.display = 'none');
+  document.querySelectorAll('.arrow').forEach(ar => ar.style.transform = 'rotate(0deg)');
+  if(!open){
+    answer.style.display = 'block';
+    arrow.style.transform = 'rotate(180deg)';
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is 6 Club?",
+      "acceptedAnswer": {"@type": "Answer","text": "6 Club is an Indian online gaming platform that offers colour prediction games, lottery-style games, and casual mobile games through a dedicated app."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I register on 6 Club Game?",
+      "acceptedAnswer": {"@type": "Answer","text": "Users can register by entering a mobile number, creating a password, and completing account verification. The process is usually completed within a few minutes."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is the login process secure?",
+      "acceptedAnswer": {"@type": "Answer","text": "Yes. The platform uses encrypted connections and secure servers to protect user accounts and personal information."}
+    },
+    {
+      "@type": "Question",
+      "name": "What types of games are available?",
+      "acceptedAnswer": {"@type": "Answer","text": "The platform includes colour prediction games, lottery formats such as K3 and 5D, blockchain-based games, and casual mobile games."}
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum withdrawal amount?",
+      "acceptedAnswer": {"@type": "Answer","text": "The minimum withdrawal amount may vary depending on the payment method. In most cases, it starts from ₹100."}
+    },
+    {
+      "@type": "Question",
+      "name": "How long do withdrawals take?",
+      "acceptedAnswer": {"@type": "Answer","text": "UPI and wallet withdrawals are often processed within a few hours. Bank transfers may take up to 24 hours depending on banking systems."}
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use the referral code?",
+      "acceptedAnswer": {"@type": "Answer","text": "During registration, users can enter the invite code 635656315449 in the referral field to access referral-related benefits."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is 6 Club Real or Fake?",
+      "acceptedAnswer": {"@type": "Answer","text": "Some users report successful withdrawals based on the gameplay and platform rules. Results may vary, and users should play responsibly."}
+    },
+    {
+      "@type": "Question",
+      "name": "6 Club Game Gift Code Telegram Channel?",
+      "acceptedAnswer": {"@type": "Answer","text": "Some 6 Club Game free gift codes are given on this website and new 6 Club Gift Codes are given here every day more than 3 times."}
+    }
+  ]
+}
+</script>
+</body>
+</html>
